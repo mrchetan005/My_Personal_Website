@@ -42,10 +42,10 @@ const textLoad = () => {
         dynamicText.innerText = 'Frontend Developer';
     }, 0);
     setTimeout(() => {
-        dynamicText.innerText = 'Freelancer';
+        dynamicText.innerText = 'Backend Developer';
     }, 6000);
     setTimeout(() => {
-        dynamicText.innerText = 'Backend Developer';
+        dynamicText.innerText = 'Freelancer';
     }, 12000);
 }
 textLoad();
@@ -238,7 +238,7 @@ const themeSettingButton = document.getElementById('theme-button'),
     selectedDarkTheme = localStorage.getItem('selected-theme');
 
 selectedDarkTheme === 'dark' ? changeDark() : changeLight();
-let color = localStorage.getItem('hue-color') || 230;
+let color = localStorage.getItem('hue-color') || 15;
 document.documentElement.style.setProperty('--hue-color', color);
 
 
